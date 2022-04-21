@@ -14,19 +14,17 @@ public class Main {
 		fileLogger=new FileLogger();
 		userManagers= new UserManager[] {new StudentManager(fileLogger), new InstructorManager(fileLogger)};
 		
-		System.out.println("-Ekle");
 		runAdds();
 		
 		System.out.println("");
-		System.out.println("-Güncelle");
 		runUpdates();
 		
 		System.out.println("");
-		System.out.println("-Getir");
 		runGetByIds(1);
 	}
 	
 	static void runAdds() {
+		System.out.println("-Ekle");
 		for(UserManager userManager:userManagers) {
 			userManager.add();
 			System.out.println("---------------------------");
@@ -34,6 +32,7 @@ public class Main {
 	}
 	
 	static void runUpdates() {
+		System.out.println("-Güncelle");
 		for(UserManager userManager:userManagers) {
 			userManager.update();
 			System.out.println("---------------------------");
@@ -41,6 +40,7 @@ public class Main {
 	}
 	
 	static void runGetByIds(int id) {
+		System.out.println("-Getir");
 		for(UserManager userManager:userManagers) {
 			userManager.getById(id);
 			System.out.println("---------------------------");
