@@ -5,7 +5,7 @@ import gun3Odev2.entities.User;
 
 public class UserManager {
 	
-	Logger logger;
+	protected Logger logger;
 	
 	public UserManager(Logger logger) {
 		this.logger = logger;
