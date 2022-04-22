@@ -10,10 +10,12 @@ public class Main {
 	static FileLogger fileLogger;
 	static UserManager[] userManagers;
 	
-	public static void main(String[] args) {	
+	static {
 		fileLogger=new FileLogger();
 		userManagers= new UserManager[] {new StudentManager(fileLogger), new InstructorManager(fileLogger)};
-		
+	}
+	
+	public static void main(String[] args) {
 		runAdds();
 		
 		System.out.println("");
