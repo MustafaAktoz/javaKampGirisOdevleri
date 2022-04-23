@@ -1,6 +1,8 @@
 package gun4Odev3.entities.concretes;
 
-public class Player {
+import gun4Odev3.entities.abstracts.Entity;
+
+public class Player implements Entity {
 	private int id;
 	private String firstName;
 	private String lastName;

@@ -1,7 +1,8 @@
 package gun3Odev2.entities;
 
+import gun3Odev2.entities.abstracts.Entity;
 
-public class User {
+public class User implements Entity {
 	private int id;
 	private String firstName;
 	private String lastName;

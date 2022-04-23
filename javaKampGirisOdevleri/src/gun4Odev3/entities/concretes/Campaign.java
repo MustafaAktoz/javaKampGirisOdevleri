@@ -1,6 +1,8 @@
 package gun4Odev3.entities.concretes;
 
-public class Campaign {
+import gun4Odev3.entities.abstracts.Entity;
+
+public class Campaign implements Entity {
 	private int id;
 	private String name;
 	private int discountRate;

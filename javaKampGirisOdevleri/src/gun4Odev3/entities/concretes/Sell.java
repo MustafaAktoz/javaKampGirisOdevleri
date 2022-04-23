@@ -1,6 +1,8 @@
 package gun4Odev3.entities.concretes;
 
-public class Sell {
+import gun4Odev3.entities.abstracts.Entity;
+
+public class Sell implements Entity {
 	private int id;
 	private int playerId;
 	private int campaignId;
