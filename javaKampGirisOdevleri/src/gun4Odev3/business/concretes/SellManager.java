@@ -22,6 +22,9 @@ public class SellManager implements SellService {
 	public void add(Sell sell) {
 		campaignService.applyCampaign(sell);
 		sellDao.add(sell);
-		System.out.println("Oyun, '" + playerService.getById(sell.getPlayerId()).getFirstName() + "' adlý oyuncuya, '" + campaignService.getById(sell.getCampaignId()).getName() + "' isimli kampanya uygulanarak " + sell.getPrice() + " birim fiyattan satýldý");
+		
+		var player=playerService.getById(sell.getPlayerId());
+		var campaign = campaignService.getById(sell.getCampaignId());
+		System.out.println("'"+player.getFirstName() + "' isimli oyuncu, '" + campaign.getName() + "' isimli kampanyadan yararlanarak, oyunu '" + sell.getPrice() + "' birim fiyattan satýn aldý");
 	}
 }
