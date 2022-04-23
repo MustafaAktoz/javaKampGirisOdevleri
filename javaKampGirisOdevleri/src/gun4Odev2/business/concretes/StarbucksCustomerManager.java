@@ -6,7 +6,7 @@ import gun4Odev2.entities.concretes.Customer;
 
 public class StarbucksCustomerManager extends BaseCustomerManager{
 	
-	CustomerCheckService customerCheckService;
+	private CustomerCheckService customerCheckService;
 	
 	public StarbucksCustomerManager(CustomerCheckService customerCheckService) {
 		this.customerCheckService = customerCheckService;

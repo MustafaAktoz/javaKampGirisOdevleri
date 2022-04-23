@@ -7,8 +7,8 @@ import gun3Odev2.business.loggers.FileLogger;
 
 public class Main {
 
-	static FileLogger fileLogger;
-	static UserManager[] userManagers;
+	private static FileLogger fileLogger;
+	private static UserManager[] userManagers;
 	
 	static {
 		fileLogger=new FileLogger();
