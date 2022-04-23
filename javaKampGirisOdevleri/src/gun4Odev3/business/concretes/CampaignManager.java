@@ -7,7 +7,7 @@ import gun4Odev3.entities.concretes.Sell;
 
 public class CampaignManager implements CampaignService {
 
-	CampaignDao campaignDao;
+	private CampaignDao campaignDao;
 	
 	public CampaignManager(CampaignDao campaignDao) {
 		this.campaignDao = campaignDao;

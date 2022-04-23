@@ -8,7 +8,7 @@ import gun4Odev3.entities.concretes.Sell;
 
 public class InMemorySellDao implements SellDao {
 
-	List<Sell> sells;
+	private List<Sell> sells;
 	
 	public InMemorySellDao() {
 		this.sells = new ArrayList<Sell>();

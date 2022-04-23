@@ -8,7 +8,7 @@ import gun4Odev3.entities.concretes.Player;
 
 public class InMemoryPlayerDao implements PlayerDao {
 
-	List<Player> players;
+	private List<Player> players;
 	
 	public InMemoryPlayerDao() {
 		this.players = new ArrayList<Player>();

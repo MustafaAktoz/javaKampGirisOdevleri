@@ -8,9 +8,9 @@ import gun4Odev3.entities.concretes.Sell;
 
 public class SellManager implements SellService {
 
-	SellDao sellDao;
-	CampaignService campaignService;
-	PlayerService playerService;
+	private SellDao sellDao;
+	private CampaignService campaignService;
+	private PlayerService playerService;
 
 	public SellManager(SellDao sellDao, CampaignService campaignService, PlayerService playerService) {
 		this.sellDao = sellDao;

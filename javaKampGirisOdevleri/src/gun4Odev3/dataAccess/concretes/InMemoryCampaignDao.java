@@ -8,7 +8,7 @@ import gun4Odev3.entities.concretes.Campaign;
 
 public class InMemoryCampaignDao implements CampaignDao {
 
-	List<Campaign> campaigns;
+	private List<Campaign> campaigns;
 	
 	public InMemoryCampaignDao() {
 		this.campaigns = new ArrayList<Campaign>();
