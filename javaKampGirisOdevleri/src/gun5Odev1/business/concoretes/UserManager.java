@@ -23,7 +23,7 @@ public class UserManager implements UserService{
 		var result=BusinessRules.run(
 				checkIfPasswordExceededLimit(user.getPassword()),
 				checkIfEmailIsInCorrectFormat(user.getEmail()),
-				checkIfCheckIfEmailHasBeenUsedBefore(user.getEmail()),
+				checkIfEmailHasBeenUsedBefore(user.getEmail()),
 				checkLengthOfFirstName(user.getFirstName()),
 				checkLengthOfLastName(user.getLastName())
 				);
@@ -75,7 +75,7 @@ public class UserManager implements UserService{
 		return null;
 	}
 	
-	private String checkIfCheckIfEmailHasBeenUsedBefore(String email) {
+	private String checkIfEmailHasBeenUsedBefore(String email) {
 		var result=userDao.getByEmail(email);
 		if(result!=null) return "Email zaten kullanýlýyor";
 		
